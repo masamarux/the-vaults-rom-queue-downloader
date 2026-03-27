@@ -1,12 +1,21 @@
 {
   "name": "the-vaults-rom-queue-downloader",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Sequential vimm.net ROM queue downloader with Playwright",
+  "main": "cli/entry.js",
+  "bin": {
+    "rom-queue-download": "./cli/entry.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/core/*.test.js tests/cli/*.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "playwright": "^1.53.2"
+  }
 }

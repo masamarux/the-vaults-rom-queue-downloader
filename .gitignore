@@ -17,6 +17,8 @@ coverage
 bower_components
 .lock-wscript
 build/Release
+build/
+dist/
 node_modules/
 jspm_packages/
 web_modules/
@@ -32,5 +34,10 @@ web_modules/
 .cache/
 .temp
 .cache
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
 .agents
 .codex
+queue.txt
